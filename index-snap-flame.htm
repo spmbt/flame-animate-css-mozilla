@@ -61,6 +61,7 @@
 		margin: -320px auto 5px;
 		overflow: hidden;
 		-moz-transition: opacity .5s ease-in;
+		-webkit-transition: opacity .5s ease-in;
 	}
 
 	#flame-wrap .cauldron {
@@ -88,6 +89,7 @@
 		background-repeat: no-repeat;
 		background-size: 160px 86px;
 		-moz-transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
 		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAABWCAYAAABIBJ0pAAAC30lEQVR42u3dO2sUURiAYXNjFVkxmkRRvIIWYaMiuSDaaGRHjUgIIZgqIXYWwUIU1FURBKOdBEUUCwubFGohKDYWE7BTLCz8M+sbyB8QwjkM31s8nCkn33n3MpPNZlO73ZayCT8AGaAMUDJAGaBkgDJAyQBlgJIBygAlA6yW1WKoXTZ/Yl/4WRhgWkQ3iN/4E34WBpg8vjq+8Az4A6/Dz8MA0yK6aXwjwg+4F34eBpg8wGd4hxcEOBl+HgaYNL4tWCa8JdzHcPiZGGA6BHeQAO/iBscj4edhgMkD3IMFTKEn/DwMMHmAfbjYLotG+FkYYJYAt/LyewJ94WdhgNkiHCDA7vBzMMBsAXbAORigDFAyQBmgZIAyQMkAZYCSAbaj3zC/xG9sFljrBqj0ymIvAf7CZ44vG6DS40OzWMEbzKNmgEoZ4Eks4zFu44oBKnWE51BgHlM4aoBKryx2Et8YGrwv7DJAJUd4Newgwh4DVK4IfQ8ob0RLBigDlAxQBigZoAxQMkBFCLBs7m+XxYPoA1KuALH+TZ+3og9JuQIsmxcI8C3raPRBKU+AvQTYYl1EPfqwlOMipCwmiG+aEE9FH5ayBNjcRYTHWBvoij4wbaz//Qb4zugDk/cBZYCSAcoAJQOUAWayWpzm1tDV6JtogJkQXwtfo2+iAeYL8BW+Yzz6RhpgngCf8jK8wroUfSMNME+Ad/ASSzgefTMNMLWymOUZ8BHx3cSs/yLVAJMiuAMEuIh5YjzP2lPBn+EM5z1jgBXF5o2ziROs2yv8QPqLIwZYzQDrbN4Y6hW/mv+IfgOs5gb2YluFH0RznP8n1ofYbIDVjLCzwgEe4vzf4zkmDVA5ImzhyfoVfcMAlRTRDaOF64Q4wzpggEqK8K4R3hwmOB5BzQCV9L4mpnEWQ+g3QKW1WqyFN8p6GHUDVFr86SvW4tuNbgNUjgg7iK/G6kWIZIAyQMkAZYCSAcoApY3wD2yjOyG5YBqIAAAAAElFTkSuQmCC);
 	}
 
@@ -95,30 +97,35 @@
 		left: 20px;
 		background-position: -76px -6px;
 		-moz-animation: flame-bit-ani 2000ms linear 0ms infinite;
+		-webkit-animation: flame-bit-ani 2000ms linear 0ms infinite;
 	}
 
 	#flame-wrap.ani-flame .flame-bit.two {
 		left: 38px;
 		background-position: 0px -42px;
 		-moz-animation: flame-bit-ani 2000ms linear 1000ms infinite;
+		-webkit-animation: flame-bit-ani 2000ms linear 1000ms infinite;
 	}
 
 	#flame-wrap.ani-flame .flame-bit.three {
 		left: 56px;
 		background-position: -38px -56px;
 		-moz-animation: flame-bit-ani 2000ms linear 3500ms infinite;
+		-webkit-animation: flame-bit-ani 2000ms linear 3500ms infinite;
 	}
 
 	#flame-wrap.ani-flame .flame-bit.four {
 		left: 74px;
 		background-position: -90px -62px;
 		-moz-animation: flame-bit-ani 2000ms linear 4000ms infinite;
+		-webkit-animation: flame-bit-ani 2000ms linear 4000ms infinite;
 	}
 
 	#flame-wrap.ani-flame .flame-bit.five {
 		left: 90px;
 		background-position: -120px -26px;
 		-moz-animation: flame-bit-ani 2000ms linear 1500ms infinite;
+		-webkit-animation: flame-bit-ani 2000ms linear 1500ms infinite;
 	}
 
 	#flame-wrap .fire {
@@ -140,59 +147,83 @@
 	#flame-wrap .frame.reverse {
 		opacity: .15;
 		-moz-transform: rotateY(180deg);
+		-webkit-transform: rotateY(180deg);
 	}
 
 	#flame-wrap.ani-flame .frame {
 		opacity: 0;
 		-moz-transform: translate3d(0px, 0px, 0px) scale3D(1, 0.6, 1);
+		-webkit-transform: translate3d(0px, 0px, 0px) scale3D(1, 0.6, 1);
 		-moz-animation: flameish 1000ms linear 0s infinite;
+		-webkit-animation: flameish 1000ms linear 0s infinite;
 		-moz-transform-origin: bottom center;
+		-webkit-transform-origin: bottom center;
 	}
 
 	#flame-wrap.ani-flame .frame.reverse {
 		-moz-animation: flameish-reverse 1000ms linear 0s infinite;
+		-webkit-animation: flameish-reverse 1000ms linear 0s infinite;
 	}
 
 	#flame-wrap.ani-flame .frame.one {
 		-moz-animation-delay: 0ms;
+		-webkit-animation-delay: 0ms;
 		-moz-animation-duration: 900ms;
+		-webkit-animation-duration: 900ms;
 	}
 
 	#flame-wrap.ani-flame .frame.two {
 		-moz-animation-delay: 180ms;
+		-webkit-animation-delay: 180ms;
 		-moz-animation-duration: 900ms;
+		-webkit-animation-duration: 900ms;
 	}
 
 	#flame-wrap.ani-flame .frame.three {
 		-moz-animation-delay: 360ms;
+		-webkit-animation-delay: 360ms;
 		-moz-animation-duration: 900ms;
+		-webkit-animation-duration: 900ms;
 	}
 
 	#flame-wrap.ani-flame .frame.four {
 		-moz-animation-delay: 540ms;
+		-webkit-animation-delay: 540ms;
 		-moz-animation-duration: 900ms;
+		-webkit-animation-duration: 900ms;
 	}
 
 	#flame-wrap.ani-flame .frame.five {
 		-moz-animation-delay: 720ms;
+		-webkit-animation-delay: 720ms;
 		-moz-animation-duration: 900ms;
+		-webkit-animation-duration: 900ms;
 	}
 
 	#flame-wrap.ani-flame .frame.six {
 		opacity: 0;
 		-moz-animation-delay: 900ms;
+		-webkit-animation-delay: 900ms;
 		-moz-animation-duration: 900ms;
+		-webkit-animation-duration: 900ms;
 	}
 
 	#flame-wrap.ani-flame .frame.seven {
 		opacity: 0;
 		-moz-animation-delay: 1080ms;
+		-webkit-animation-delay: 1080ms;
 		-moz-animation-duration: 900ms;
+		-webkit-animation-duration: 900ms;
 	}
 
 	@-moz-keyframes flameish { 0% { opacity: 0; -moz-transform: translate3d(0,0,0) scale3D(1, 0.6, 1); } 50% { opacity: .6; -moz-transform: translate3d(0,0,0) scale3D(1,1,1); } 100% { opacity: 0; -moz-transform: translate3d(0,0,0) scale3D(1, 1.6, 1); } }
-	@-moz-keyframes flameish-reverse { 0% { opacity: 0; -moz-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 0.6, 1); } 50% { opacity: .6; -moz-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 1, 1); } 100% { opacity: 0; -moz-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 1.6, 1); } }
-	@-moz-keyframes flame-bit-ani { 0% { -moz-transform: translate3d(0,0,0); opacity: 1; } 50%{ -moz-transform: translate3d(0,-100px,0); opacity: .5; } 100%{ -moz-transform: translate3d(0,-200px,0); opacity: 0; } }
+	@-webkit-keyframes flameish { 0% { opacity: 0; -webkit-transform: translate3d(0,0,0) scale3D(1, 0.6, 1); } 50% { opacity: .6; -webkit-transform: translate3d(0,0,0) scale3D(1,1,1); } 100% { opacity: 0; -webkit-transform: translate3d(0,0,0) scale3D(1, 1.6, 1); } }
+
+    @-moz-keyframes flameish-reverse { 0% { opacity: 0; -moz-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 0.6, 1); } 50% { opacity: .6; -moz-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 1, 1); } 100% { opacity: 0; -moz-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 1.6, 1); } }
+    @-webkit-keyframes flameish-reverse { 0% { opacity: 0; -webkit-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 0.6, 1); } 50% { opacity: .6; -webkit-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 1, 1); } 100% { opacity: 0; -webkit-transform: translate3d(0,0,0) rotateY(180deg) scale3D(1, 1.6, 1); } }
+
+    @-moz-keyframes flame-bit-ani { 0% { -moz-transform: translate3d(0,0,0); opacity: 1; } 50%{ -moz-transform: translate3d(0,-100px,0); opacity: .5; } 100%{ -moz-transform: translate3d(0,-200px,0); opacity: 0; } }
+    @-webkit-keyframes flame-bit-ani { 0% { -webkit-transform: translate3d(0,0,0); opacity: 1; } 50%{ -webkit-transform: translate3d(0,-100px,0); opacity: .5; } 100%{ -webkit-transform: translate3d(0,-200px,0); opacity: 0; } }
 </style>
 
 <script type="text/javascript">
